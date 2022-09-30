@@ -14,11 +14,12 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/search?q=${query}&type=track`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQArY8_b1Q9RZmbaRSIw0EORrWKzZS7Eg7xYHggtQMaI_tAVbCOo0EI4PXfNEjVGeMpupkTLae7okcVEojskLGVXYzcuQ3nEUDjI-qvQlm_WODOBilCAnw9HXOEHfdFU18SAhnRWvtWf2g3lSr0t2Cu4xpVqUVWIIJX_2rqV13JBLyvMZJdEyLX4v7dPcQU5uuY'
+        'Bearer BQBOXdlspr-aCPOKpqDErfXXHNwpHhVxThiSNRZemquRZXbvIO6PUjWW6d-f0eQ9V3BjR7RrwRCd6hM7WWK39XQje2Ny0cx0uLDY-AbWvuEe5-0NRJp9qijdS1oTwfFfrNKQZ8ND4YyIgf2Jt-0ACMltvV5noQF5qdcRmdiVdpJVe0fOjnlRA0Pp9czp_EDwOOs'
     });
 
     let obsTracks = this.http.get(url, { headers });
     return obsTracks;
  //Ritorno un observable ai componenti che richiedono il servizio
+ 
   }
 }
